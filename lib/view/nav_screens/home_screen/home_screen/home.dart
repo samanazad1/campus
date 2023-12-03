@@ -15,7 +15,6 @@ class HomePage extends StatelessWidget {
           ),
           Text("News & Events"),
           SizedBox(),
-          SizedBox()
         ],
       ),
     );

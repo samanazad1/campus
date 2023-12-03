@@ -47,6 +47,8 @@ class _MainScreenState extends State<MainScreen> {
       ),
       body: IndexedStack(index: index, children: _pages),
       bottomNavigationBar: BottomNavigationBar(
+        selectedFontSize: 13,
+        unselectedFontSize: 12.5,
         currentIndex: index,
         onTap: (ind) {
           setState(() {

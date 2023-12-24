@@ -1,5 +1,5 @@
 import 'package:campus/models/model/department_model.dart';
-import 'package:campus/view/config/%20colors.dart';
+import 'package:campus/view/z_config/%20colors.dart';
 import 'package:flutter/material.dart';
 
 class GridItem extends StatelessWidget {
@@ -28,7 +28,7 @@ class GridItem extends StatelessWidget {
             style: const TextStyle(
                 color: Colors.white, fontWeight: FontWeight.bold),
           ),
-          SizedBox()
+         const SizedBox()
         ],
       ),
     );

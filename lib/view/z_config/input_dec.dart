@@ -1,4 +1,5 @@
-import 'package:campus/view/config/%20colors.dart';
+
+import 'package:campus/view/z_config/%20colors.dart';
 import 'package:flutter/material.dart';
 
 const myInputDecoration =  InputDecoration(

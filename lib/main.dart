@@ -1,6 +1,5 @@
 import 'package:campus/view/auth/auth_page.dart';
-import 'package:campus/view/config/%20colors.dart';
-import 'package:campus/view/nav_screens/home_screen/%20main_screen.dart';
+import 'package:campus/view/z_config/%20colors.dart';
 import 'package:flutter/material.dart';
 
 void main() {

@@ -1,5 +1,5 @@
-import 'package:campus/view/config/%20colors.dart';
-import 'package:campus/view/config/input_dec.dart';
+import 'package:campus/view/z_config/%20colors.dart';
+import 'package:campus/view/z_config/input_dec.dart';
 import 'package:flutter/material.dart';
 
 class AuthPage extends StatefulWidget {
@@ -8,6 +8,7 @@ class AuthPage extends StatefulWidget {
   @override
   State<AuthPage> createState() => _AuthPageState();
 }
+
 class _AuthPageState extends State<AuthPage> {
   bool isLogin = false;
   @override
@@ -25,7 +26,7 @@ class _AuthPageState extends State<AuthPage> {
             Container(
               padding: EdgeInsets.symmetric(horizontal: size.width * 0.03),
               margin: EdgeInsets.symmetric(horizontal: size.width * 0.03),
-              height: size.height * (isLogin ? 0.55 : 0.67),
+              height: size.height * (isLogin ? 0.55 : 0.7),
               width: size.width,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10.0),
@@ -152,9 +153,7 @@ class _AuthPageState extends State<AuthPage> {
                             style: const TextStyle(color: primaryColor),
                           )),
                       TextButton(
-                          onPressed: () {
-
-                          },
+                          onPressed: () {},
                           child: const Text(
                             'Get in as a guest',
                             style: TextStyle(color: Colors.black),

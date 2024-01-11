@@ -1,5 +1,5 @@
 import 'package:campus/models/model/department_model.dart';
-import 'package:campus/view/z_config/%20colors.dart';
+import 'package:campus/view/z_config/cutom_colors.dart';
 import 'package:flutter/material.dart';
 
 class GridItem extends StatelessWidget {

@@ -1,5 +1,5 @@
-
-import 'package:campus/view/z_config/%20colors.dart';
+// ignore: file_names
+import 'package:campus/view/z_config/cutom_colors.dart';
 import 'package:campus/view/z_general_widget/%20drawer.dart';
 import 'package:campus/view/nav_screens/home_screen/departments.dart/departments_screen.dart';
 import 'package:campus/view/nav_screens/home_screen/home_screen/home.dart';
@@ -33,6 +33,7 @@ class _MainScreenState extends State<MainScreen> {
           fontSize: 17, color: Colors.white, fontWeight: FontWeight.bold),
     ),
   ];
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(

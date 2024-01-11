@@ -1,4 +1,4 @@
-import 'package:campus/view/z_config/%20colors.dart';
+import 'package:campus/view/z_config/cutom_colors.dart';
 import 'package:campus/view/z_config/input_dec.dart';
 import 'package:flutter/material.dart';
 

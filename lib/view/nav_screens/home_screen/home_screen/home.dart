@@ -1,3 +1,4 @@
+import 'package:campus/view/nav_screens/home_screen/home_screen/widgets/slider.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -15,6 +16,7 @@ class HomePage extends StatelessWidget {
           ),
           Text("News & Events"),
           SizedBox(),
+          SliderView()
         ],
       ),
     );

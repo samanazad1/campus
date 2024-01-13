@@ -1,4 +1,3 @@
-
 import 'package:campus/view/z_config/cutom_colors.dart';
 import 'package:campus/view/z_general_widget/%20drawer.dart';
 import 'package:campus/view/nav_screens/home_screen/departments.dart/departments_screen.dart';
@@ -21,14 +20,14 @@ class _MainScreenState extends State<MainScreen> {
       "College of Engineering",
       style: TextStyle(
           fontSize: 17, color: Colors.white, fontWeight: FontWeight.bold),
-    ), 
+    ),
     Text(
       "Department",
       style: TextStyle(
           fontSize: 17, color: Colors.white, fontWeight: FontWeight.bold),
     ),
     Text(
-      "Navigation",
+      "Transactions",
       style: TextStyle(
           fontSize: 17, color: Colors.white, fontWeight: FontWeight.bold),
     ),
@@ -48,22 +47,17 @@ class _MainScreenState extends State<MainScreen> {
       ),
       body: IndexedStack(index: index, children: _pages),
       bottomNavigationBar: BottomNavigationBar(
-        selectedFontSize: 13,
-        unselectedFontSize: 12.5,
         currentIndex: index,
-        onTap: (ind) {
+        onTap: (i) {
           setState(() {
-            index = ind;
+            index = i;
           });
         },
-        backgroundColor: Colors.brown[50],
-        selectedItemColor: primaryColor.withAlpha(180),
+        selectedItemColor: primaryColor,
         items: const [
-          BottomNavigationBarItem(icon: Icon(IconlyBold.home), label: 'Home'),
-          BottomNavigationBarItem(
-              icon: Icon(IconlyBold.category), label: 'Departments'),
-          BottomNavigationBarItem(
-              icon: Icon(IconlyBold.location), label: 'Navigation'),
+          BottomNavigationBarItem(icon: Icon(IconlyBold.home), label: "Home"),
+          BottomNavigationBarItem(icon: Icon(IconlyBold.category), label: "Department"),
+          BottomNavigationBarItem(icon: Icon(IconlyBold.paper), label: "Transactions")
         ],
       ),
     );

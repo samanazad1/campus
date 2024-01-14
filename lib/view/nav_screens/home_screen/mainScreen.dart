@@ -1,6 +1,7 @@
+import 'package:campus/view/nav_screens/transactions/transactions_screen.dart';
 import 'package:campus/view/z_config/cutom_colors.dart';
 import 'package:campus/view/z_general_widget/%20drawer.dart';
-import 'package:campus/view/nav_screens/home_screen/departments.dart/departments_screen.dart';
+import 'package:campus/view/nav_screens/departments.dart/departments_screen.dart';
 import 'package:campus/view/nav_screens/home_screen/home_screen/home.dart';
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
@@ -14,7 +15,7 @@ class MainScreen extends StatefulWidget {
 
 class _MainScreenState extends State<MainScreen> {
   int index = 0;
-  final _pages = const [HomePage(), DepartmentsScreen(), Text("")];
+  final _pages = const [HomePage(), DepartmentsScreen(), TransactionsScreen()];
   final List<Widget> titles = const [
     Text(
       "College of Engineering",

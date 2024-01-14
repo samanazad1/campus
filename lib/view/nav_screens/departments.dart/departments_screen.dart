@@ -1,5 +1,5 @@
 import 'package:campus/models/data/department_data.dart';
-import 'package:campus/view/nav_screens/home_screen/departments.dart/widgets/griditem_widgets.dart';
+import 'package:campus/view/nav_screens/departments.dart/widgets/griditem_widgets.dart';
 import 'package:flutter/material.dart';
 
 class DepartmentsScreen extends StatelessWidget {

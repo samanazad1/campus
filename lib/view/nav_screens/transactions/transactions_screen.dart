@@ -34,29 +34,8 @@ class TransactionsScreen extends StatelessWidget {
                 child: ListView.builder(
                   itemCount: _transactionTypes.length,
                   itemBuilder: (BuildContext context, int index) {
-                    return Container(
-                      margin: const EdgeInsets.symmetric(vertical: 3),
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 10, vertical: 5),
-                      height: MediaQuery.sizeOf(context).height * 0.065,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          color: primaryColor.withAlpha(20)),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text(
-                            _transactionTypes[index],
-                            style: const TextStyle(
-                                color: Color.fromARGB(255, 78, 78, 78)),
-                          ),
-                          const Icon(
-                            Icons.arrow_forward_ios,
-                            color: Color.fromARGB(255, 78, 78, 78),
-                          )
-                        ],
-                      ),
-                    );
+                    return   TransactionCard(
+                        transactionTypes: _transactionTypes[index]);
                   },
                 ),
               )
@@ -75,4 +54,38 @@ class TransactionsScreen extends StatelessWidget {
     "Available students transactions",
     "Get cetification",
   ];
+}
+
+class TransactionCard extends StatelessWidget {
+  const TransactionCard({
+    super.key,
+    required this.transactionTypes,
+  });
+
+  final String transactionTypes;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.symmetric(vertical: 3),
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+      height: MediaQuery.sizeOf(context).height * 0.065,
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(10),
+          color: primaryColor.withAlpha(20)),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Text(
+            transactionTypes,
+            style: const TextStyle(color: Color.fromARGB(255, 78, 78, 78)),
+          ),
+          const Icon(
+            Icons.arrow_forward_ios,
+            color: Color.fromARGB(255, 78, 78, 78),
+          )
+        ],
+      ),
+    );
+  }
 }

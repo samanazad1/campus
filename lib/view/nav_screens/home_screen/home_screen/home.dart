@@ -7,16 +7,20 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Padding(
-      padding: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+      padding: EdgeInsets.symmetric(vertical: 10),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           SizedBox(
             height: 5,
           ),
-          Text("News & Events"),
           SizedBox(),
-          SliderView()
+          SliderVIew(),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 10),
+            child: Text("News & Events"),
+          ),
+          
         ],
       ),
     );

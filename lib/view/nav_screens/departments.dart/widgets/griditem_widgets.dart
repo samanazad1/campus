@@ -15,10 +15,7 @@ class GridItem extends StatelessWidget {
           gradient: LinearGradient(
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
-              colors: [
-                primaryColor.withBlue(50),
-                primaryColor.withAlpha(180)
-              ])),
+              colors: [primaryColor, primaryColor.withAlpha(230)])),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -28,7 +25,7 @@ class GridItem extends StatelessWidget {
             style: const TextStyle(
                 color: Colors.white, fontWeight: FontWeight.bold),
           ),
-         const SizedBox()
+          const SizedBox()
         ],
       ),
     );

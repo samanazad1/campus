@@ -68,7 +68,11 @@ class TransactionsScreen extends StatelessWidget {
   final List<String> _transactionTypes = const [
     "12th Studen Registerations",
     "New student (Waivor and Transfering) ",
+    "Endorsment",
+    "Getting permissionsßac ",
+    "Dormitory requirements",
     "Student's Payment",
-    "Available students transactions"
+    "Available students transactions",
+    "Get cetification",
   ];
 }
